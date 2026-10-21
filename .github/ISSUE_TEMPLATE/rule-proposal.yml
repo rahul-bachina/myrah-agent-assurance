@@ -1,0 +1,38 @@
+name: Security rule proposal
+description: Propose an evidence-based deterministic agent-security check.
+title: "[Rule]: "
+labels: [rule-proposal]
+body:
+  - type: input
+    id: platform
+    attributes:
+      label: Platform or format
+      placeholder: Copilot Studio solution, GitHub Copilot harness, SKILL.md, MCP manifest
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Observable evidence
+      description: What exact configuration signal can be checked without executing the agent?
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Security impact
+      description: Explain the risk without exaggerated or guaranteed claims.
+    validations:
+      required: true
+  - type: textarea
+    id: remediation
+    attributes:
+      label: Remediation
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: Authoritative references
+    validations:
+      required: true
